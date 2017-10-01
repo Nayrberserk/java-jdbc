@@ -2,7 +2,7 @@ package com.tecsup.jdbc.modelo;
 
 public class Producto {
 
-    private Long id;
+    private Integer id;
 
     private Categoria categoria;
 
@@ -18,11 +18,19 @@ public class Producto {
 
     private String imagen;
 
-    public Long getId() {
+    public Producto(Integer id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
+
+    public Producto() {
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
